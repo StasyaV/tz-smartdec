@@ -33,3 +33,32 @@
     color: $main-color;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .step__item {
+    &:not(:last-child) {
+      &::after {
+        left: 150%;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .step {
+    margin-bottom: 0;
+    width: 170px;
+  }
+
+  .step__item {
+    padding: 4px 9px;
+    width: 28px;
+    height: 28px;
+
+    &:not(:last-child) {
+      &::after {
+        width: 19px;
+      }
+    }
+  }
+}

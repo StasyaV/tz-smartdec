@@ -10,3 +10,9 @@
     background-image: url("../../img/icon-mobile-menu.svg");
   }
 }
+
+@media (min-width: $tablet-width) {
+  .menu-button {
+    display: none;
+  }
+}

@@ -2,6 +2,13 @@
   display: none;
 }
 
+.tab__content-security {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
 .tab__item:checked ~ .tab__content {
   display: block;
   margin-top: 35px;
@@ -9,8 +16,6 @@
 
 .tab__item:checked ~ label {
   color: $active-color;
-  border-bottom: 1px solid $active-color;
-  padding-bottom: 5px;
   font-weight: bold;
 }
 
@@ -24,6 +29,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 45%;
   font-size: 15px;
   font-weight: 600;
   padding: 10px;
@@ -38,10 +44,12 @@
   }
 
   &--cancel {
+    width: 100%;
     border-color: $second-font-color;
     color: $second-font-color;
     text-align: center;
     padding: 10px 110px;
+    display: inline-block;
   }
 }
 
@@ -56,4 +64,80 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .tab-content__button {
+    padding: 20px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tab {
+    font-size: 13px;
+    line-height: 18px;
+    padding: 11px;
+    border-bottom: none;
+    position: relative;
+
+    &--active {
+      border-bottom: 1px solid $active-color;
+    }
+  }
+
+  .tab__item:checked ~ .tab__content {
+    margin-top: 0;
+  }
+
+  .tab__content-security {
+    position: absolute;
+    width: 907px;
+    top: 55px;
+    right: -256%;
+    background-color: $background-color;
+    border: 1px solid $background-color;
+    border-radius: 4px;
+    align-items: flex-start;
+    padding: 20px 30px 30px;
+  }
+
+  .tab-content__buttons {
+    flex-direction: row;
+  }
+
+  .tab-content__nav-buttons {
+    margin-bottom: 0;
+    margin-right: auto;
+  }
+
+  .tab-content__button {
+    width: 115px;
+    height: 35px;
+    font-size: 15px;
+    padding: 0;
+
+    &--prev {
+      padding-right: 5px;
+      margin-right: 15px;
+    }
+
+    &--next {
+      padding-left: 5px;
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $main-color;
+      font-weight: bold;
+      background-color: $active-color;
+      box-shadow: 0 2px 15px $active-color;
+
+      svg {
+        fill: $main-color;
+      }
+    }
+  }
 }

@@ -20,7 +20,7 @@
 .security-content__inputs {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  align-items: center;
 }
 
 .security-content__input {
@@ -28,6 +28,10 @@
   height: 55px;
   background-color: transparent;
   border: 1px solid $border-color;
+
+  &:not(:last-child) {
+    margin-right: 7px;
+  }
 
   &::placeholder {
     padding: 0 12px;
@@ -53,5 +57,31 @@
     height: 11px;
     background-image: url("../../img/tick.svg");
     background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .security-content__step-title {
+    color: $second-font-color;
+    margin-bottom: 5px;
+  }
+
+  .security-content__input {
+    width: 40px;
+    padding-top: 10px;
+
+    &::placeholder {
+      padding: 10px 7px;
+      font-size: 32px;
+    }
+
+    &:active,
+    &:focus {
+      border-color: $active-color;
+    }
+
+    &:hover {
+      border-color: $main-font-color;
+    }
   }
 }

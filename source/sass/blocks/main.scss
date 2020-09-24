@@ -47,7 +47,13 @@ input[type="radio"] {
   max-width: 1040px;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 1000px;
+  }
+  
   .container {
     padding: 0 30px;
   }

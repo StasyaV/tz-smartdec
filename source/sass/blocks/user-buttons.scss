@@ -19,3 +19,35 @@
   height: 35px;
   margin-right: 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .user-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin-bottom: 20px;
+  }
+
+  .user-button {
+    border-bottom: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-buttons {
+    margin-bottom: 0;
+  }
+
+  .user-button {
+    padding: 20px 0;
+
+    &--action {
+      font-size: 0;
+    }
+  }
+
+  .user-button__ico {
+    margin-right: 10px;
+  }
+}

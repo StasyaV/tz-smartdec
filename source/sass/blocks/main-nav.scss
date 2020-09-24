@@ -14,3 +14,39 @@
   text-decoration: none;
   color: $main-font-color;
 }
+
+@media (min-width: $tablet-width) {
+  .main-nav__list {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    margin-right: auto;
+  }
+
+  .main-nav__list {
+    margin: 0;
+  }
+
+  .main-nav__item {
+    font-size: 13px;
+    border: none;
+    padding: 15px;
+
+    &--active {
+      border-bottom: 1px solid $active-color;
+    }
+  }
+
+  .main-nav__item-link {
+    &:active,
+    &:focus,
+    &:hover {
+      color: $active-color;
+    }
+  }
+}

@@ -4,10 +4,48 @@
   color: $main-font-color;
   font-size: 18px;
 
+  &--settings,
+  &--logout {
+    svg {
+      fill: $border-color;
+    }
+  }
+
   &--load {
     padding: 10px 30px;
     color: $button-color;
     border: 1px solid $button-color;
     border-radius: 4px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button {
+    &--load {
+      font-size: 13px;
+      padding: 10px 15px;
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: $main-color;
+      font-weight: bold;
+      background-color: $active-color;
+      box-shadow: 0 2px 15px $active-color;
+    }
+
+    &--settings,
+    &--logout {
+      &:active,
+      &:focus,
+      &:hover {
+        background-color: transparent;
+
+        svg {
+          fill: $active-color;
+        }
+      }
+    }
   }
 }

@@ -15,8 +15,37 @@
   &--close {
     display: none;
   }
+}
 
-  &--open {
-    display: block;
+@media (min-width: $tablet-width) {
+  .header__navigation {
+    &--close {
+      display: block;
+    }
+  }
+
+  .header__block {
+    justify-content: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header__block {
+    justify-content: flex-start;
+    border: none;
+  }
+
+  .header__navigation {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-grow: 1;
+    align-items: center;
+  }
+
+  .header__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }

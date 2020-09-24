@@ -17,5 +17,32 @@
   svg {
     width: 30px;
     height: 30px;
+    fill: $second-font-color;
   }
+}
+
+@media (min-width: $desktop-width) {
+  .social {
+    margin-bottom: 0;
+  }
+
+  .social__link {
+    &:active,
+    &:focus,
+    &:hover {
+      svg {
+        fill: $active-color;
+      }
+    }
+  }
+
+  // .social__item {
+  //   &:active,
+  //   &:focus,
+  //   &:hover {
+  //     svg {
+  //       fill: $active-color;
+  //     }
+  //   }
+  // }
 }

@@ -10,11 +10,33 @@
 
 .footer-nav__item {
   &:not(:last-child) {
-    margin-right: 10px;
+    margin-right: 7px;
   }
 }
 
 .footer-nav__link {
   text-decoration: none;
   color: $second-font-color;
+}
+
+@media (min-width: $desktop-width) {
+  .footer-nav {
+    margin-bottom: 0;
+  }
+
+  .footer-nav__link {
+    font-size: 12px;
+
+    &:active,
+    &:hover,
+    &:focus {
+      color: $active-color;
+    }
+  }
+
+  .footer-nav__item {
+    &:not(:last-child) {
+      margin-right: 45px;
+    }
+  }
 }
