@@ -1,0 +1,13 @@
+.button {
+  border: none;
+  background-color: transparent;
+  color: $main-font-color;
+  font-size: 18px;
+
+  &--load {
+    padding: 10px 30px;
+    color: $button-color;
+    border: 1px solid $button-color;
+    border-radius: 4px;
+  }
+}

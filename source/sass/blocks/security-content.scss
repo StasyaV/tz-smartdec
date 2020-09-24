@@ -1,0 +1,57 @@
+.security-content__step-title {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.security-content__action-form {
+  margin-bottom: 20px;
+}
+
+.security-content__action-block {
+  border: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.security-content__action-description {
+  margin-bottom: 40px;
+}
+
+.security-content__inputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.security-content__input {
+  width: 45px;
+  height: 55px;
+  background-color: transparent;
+  border: 1px solid $border-color;
+
+  &::placeholder {
+    padding: 0 12px;
+    font-size: 26px;
+    color: $active-font-color;
+    font-family: inherit;
+  }
+}
+
+.security-content__correct-indicator {
+  margin-bottom: 60px;
+}
+
+.security-content__indicator-text {
+  color: $success-color;
+  margin: 0;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    width: 25px;
+    height: 11px;
+    background-image: url("../../img/tick.svg");
+    background-repeat: no-repeat;
+  }
+}

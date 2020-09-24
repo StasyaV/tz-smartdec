@@ -1,8 +1,8 @@
 {
-  "name": "tz-smartdec",
+  "name": "tz-ecodar",
   "version": "17.0.0",
   "private": true,
-  "description": "tz-smartdec",
+  "description": "tz-ecodar",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",

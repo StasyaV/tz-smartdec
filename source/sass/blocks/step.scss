@@ -1,0 +1,35 @@
+.step {
+  @include list-reset();
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.step__item {
+  padding: 15px 20px;
+  border: 1px solid $border-color;
+  border-radius: 50%;
+  font-weight: bold;
+
+  &:not(:last-child) {
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 45px;
+      height: 1px;
+      background-color: $border-color;
+      position: absolute;
+      top: 50%;
+      left: 115%;
+    }
+  }
+
+  &--active {
+    background-color: $active-color;
+    border-color: $active-color;
+    color: $main-color;
+  }
+}

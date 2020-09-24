@@ -1,0 +1,22 @@
+.header__container {
+  margin: 0 auto;
+}
+
+.header__block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid $border-color;
+}
+
+.header__navigation {
+  &--close {
+    display: none;
+  }
+
+  &--open {
+    display: block;
+  }
+}

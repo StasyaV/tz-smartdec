@@ -1,0 +1,21 @@
+.social {
+  margin-bottom: 20px;
+}
+
+.social__list {
+  @include list-reset();
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.social__item {
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+}

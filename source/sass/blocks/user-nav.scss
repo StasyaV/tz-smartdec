@@ -1,0 +1,21 @@
+.user-nav__ballance {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 18px;
+  padding: 20px;
+  border-bottom: 1px solid $border-color;
+}
+
+.user-nav__ballance-count {
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    width: 15px;
+    height: 10px;
+    background-image: url("../../img/D-like-logo.png");
+    background-repeat: no-repeat;
+  }
+}

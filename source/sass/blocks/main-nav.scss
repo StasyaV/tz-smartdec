@@ -1,0 +1,16 @@
+.main-nav__list {
+  @include list-reset();
+  display: flex;
+  flex-direction: column;
+}
+
+.main-nav__item {
+  padding: 25px;
+  border-bottom: 1px solid $border-color;
+  font-size: 18px;
+}
+
+.main-nav__item-link {
+  text-decoration: none;
+  color: $main-font-color;
+}

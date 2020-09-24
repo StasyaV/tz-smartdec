@@ -10,50 +10,52 @@
 
 <body>
   <header class="header">
-    <div class="header__block">
-      <div class="header__logo logo">
-        <img src="img/logo.png" alt="Company logo" class="logo__img">
+    <div class="header__container">
+      <div class="header__block">
+        <div class="header__logo logo">
+          <img src="img/logo.png" alt="Company logo" class="logo__img">
+        </div>
+        <button class="header__menu-button menu-button menu-button--closed">
+        </button>
       </div>
-      <button class="header__menu-button header__menu-button--closed">
-      </button>
-    </div>
-    <div class="header__navigation">
-      <div class="header__navigtion-user user-nav">
-        <div class="user-nav__ballance">Your ballance: <span class="user-nav__ballance-count">20000</span> DGTX</div>
-        <ul class="user-nav__buttons user-buttons">
-          <li class="user-buttons__item user-button">
-            <button type="button" class="user-button__load button">Load up</button>
-          </li>
-          <li class="user-buttons__item">
-            <button type="button" class="user-button__settings">
-              <svg class="user-button__settings-ico ico">
-                <use xlink:href="img/sprite.svg#settings"></use>
-              </svg>
-            </button>
-          </li>
-          <li class="user-buttons__item">
-            <button type="button" class="user-button__logout">
-              <svg class="user-button__settings-ico ico">
-                <use xlink:href="img/sprite.svg#logout"></use>
-              </svg>
-            </button>
-          </li>
-        </ul>
+      <div class="header__navigation header__navigation--close">
+        <div class="header__navigtion-user user-nav">
+          <div class="user-nav__ballance">Your ballance: <span class="user-nav__ballance-count">20000</span> DGTX</div>
+          <ul class="user-nav__buttons user-buttons">
+            <li class="user-buttons__item user-button">
+              <button type="button" class="user-button__load button button--load">Load up</button>
+            </li>
+            <li class="user-buttons__item user-button">
+              <button type="button" class="user-button__settings user-button--action button button--settings">Settings
+                <svg class="user-button__ico ico">
+                  <use xlink:href="img/sprite.svg#settings"></use>
+                </svg>
+              </button>
+            </li>
+            <li class="user-buttons__item user-button">
+              <button type="button" class="user-button__logout user-button--action button button--logout">Log-out
+                <svg class="user-button__ico ico">
+                  <use xlink:href="img/sprite.svg#logout"></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <nav class="header__navigation-main main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="#" class="main-nav__item-link">Futures</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__item-link">Spot</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__item-link">Community</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__item-link">Tournamets</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__item-link main-nav__item-link--active">Account</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__item-link">Help</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav class="header__navigation-main main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="#" class="main-nav__item-link">Futures</a></li>
-          <li class="main-nav__item"><a href="#" class="main-nav__item-link">Spot</a></li>
-          <li class="main-nav__item"><a href="#" class="main-nav__item-link">Community</a></li>
-          <li class="main-nav__item"><a href="#" class="main-nav__item-link">Tournamets</a></li>
-          <li class="main-nav__item"><a href="#" class="main-nav__item-link main-nav__item-link--active">Account</a></li>
-          <li class="main-nav__item"><a href="#" class="main-nav__item-link">Help</a></li>
-        </ul>
-      </nav>
     </div>
   </header>
   <main class="main-content">
-    <secttion class="main-content__account account">
+    <secttion class="main-content__account account container">
       <h1 class="visually-hidden">Account Settings</h1>
       <ul class="account__nav account-nav">
         <li class="account-nav__tab tab">
@@ -72,12 +74,20 @@
               </div>
               <div class="tab-content__buttons">
                 <div class="tab-content__nav-buttons">
-                  <button class="tab-content__button tab-content__button--prev button">Prev step</button>
-                  <button class="tab-content__button tab-content__button--next button">Next step</button>
+                  <button class="tab-content__button tab-content__button--prev button button--prev">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#left-arrow"></use>
+                    </svg>
+                    Prev step
+                  </button>
+                  <button class="tab-content__button tab-content__button--next button button--next">
+                    Next step
+                    <svg>
+                      <use xlink:href="img/sprite.svg#right-arrow"></use>
+                    </svg>
+                  </button>
                 </div>
-                <div class="tab-content__exit-button">
-                  <button class="tab-content__button tab-content__button--cancel button">Cancel</button>
-                </div>
+                <button class="tab-content__button tab-content__button--cancel button button--cancel">Cancel</button>
               </div>
             </section>
           </div>
@@ -98,12 +108,20 @@
               </div>
               <div class="tab-content__buttons">
                 <div class="tab-content__nav-buttons">
-                  <button class="tab-content__button tab-content__button--prev button">Prev step</button>
-                  <button class="tab-content__button tab-content__button--next button">Next step</button>
+                  <button class="tab-content__button tab-content__button--prev button button--prev">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#left-arrow"></use>
+                    </svg>
+                    Prev step
+                  </button>
+                  <button class="tab-content__button tab-content__button--next button button--next">
+                    Next step
+                    <svg>
+                      <use xlink:href="img/sprite.svg#right-arrow"></use>
+                    </svg>
+                  </button>
                 </div>
-                <div class="tab-content__exit-button">
-                  <button class="tab-content__button tab-content__button--cancel button">Cancel</button>
-                </div>
+                <button class="tab-content__button tab-content__button--cancel button button--cancel">Cancel</button>
               </div>
             </section>
           </div>
@@ -124,12 +142,20 @@
               </div>
               <div class="tab-content__buttons">
                 <div class="tab-content__nav-buttons">
-                  <button class="tab-content__button tab-content__button--prev button">Prev step</button>
-                  <button class="tab-content__button tab-content__button--next button">Next step</button>
+                  <button class="tab-content__button tab-content__button--prev button button--prev">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#left-arrow"></use>
+                    </svg>
+                    Prev step
+                  </button>
+                  <button class="tab-content__button tab-content__button--next button button--next">
+                    Next step
+                    <svg>
+                      <use xlink:href="img/sprite.svg#right-arrow"></use>
+                    </svg>
+                  </button>
                 </div>
-                <div class="tab-content__exit-button">
-                  <button class="tab-content__button tab-content__button--cancel button">Cancel</button>
-                </div>
+                <button class="tab-content__button tab-content__button--cancel button button--cancel">Cancel</button>
               </div>
             </section>
           </div>
@@ -150,12 +176,20 @@
               </div>
               <div class="tab-content__buttons">
                 <div class="tab-content__nav-buttons">
-                  <button class="tab-content__button tab-content__button--prev button">Prev step</button>
-                  <button class="tab-content__button tab-content__button--next button">Next step</button>
+                  <button class="tab-content__button tab-content__button--prev button button--prev">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#left-arrow"></use>
+                    </svg>
+                    Prev step
+                  </button>
+                  <button class="tab-content__button tab-content__button--next button button--next">
+                    Next step
+                    <svg>
+                      <use xlink:href="img/sprite.svg#right-arrow"></use>
+                    </svg>
+                  </button>
                 </div>
-                <div class="tab-content__exit-button">
-                  <button class="tab-content__button tab-content__button--cancel button">Cancel</button>
-                </div>
+                <button class="tab-content__button tab-content__button--cancel button button--cancel">Cancel</button>
               </div>
             </section>
           </div>
@@ -176,12 +210,20 @@
               </div>
               <div class="tab-content__buttons">
                 <div class="tab-content__nav-buttons">
-                  <button class="tab-content__button tab-content__button--prev button">Prev step</button>
-                  <button class="tab-content__button tab-content__button--next button">Next step</button>
+                  <button class="tab-content__button tab-content__button--prev button button--prev">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#left-arrow"></use>
+                    </svg>
+                    Prev step
+                  </button>
+                  <button class="tab-content__button tab-content__button--next button button--next">
+                    Next step
+                    <svg>
+                      <use xlink:href="img/sprite.svg#right-arrow"></use>
+                    </svg>
+                  </button>
                 </div>
-                <div class="tab-content__exit-button">
-                  <button class="tab-content__button tab-content__button--cancel button">Cancel</button>
-                </div>
+                <button class="tab-content__button tab-content__button--cancel button button--cancel">Cancel</button>
               </div>
             </section>
           </div>
@@ -228,12 +270,20 @@
               </div>
               <div class="tab-content__buttons">
                 <div class="tab-content__nav-buttons">
-                  <button class="tab-content__button tab-content__button--prev button">Prev step</button>
-                  <button class="tab-content__button tab-content__button--next button">Next step</button>
+                  <button class="tab-content__button tab-content__button--prev button button--prev">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#left-arrow"></use>
+                    </svg>
+                    Prev step
+                  </button>
+                  <button class="tab-content__button tab-content__button--next button button--next">
+                    Next step
+                    <svg>
+                      <use xlink:href="img/sprite.svg#right-arrow"></use>
+                    </svg>
+                  </button>
                 </div>
-                <div class="tab-content__exit-button">
-                  <button class="tab-content__button tab-content__button--cancel button">Cancel</button>
-                </div>
+                <button class="tab-content__button tab-content__button--cancel button button--cancel">Cancel</button>
               </div>
             </section>
           </div>
@@ -254,17 +304,25 @@
               </div>
               <div class="tab-content__buttons">
                 <div class="tab-content__nav-buttons">
-                  <button class="tab-content__button tab-content__button--prev button">Prev step</button>
-                  <button class="tab-content__button tab-content__button--next button">Next step</button>
+                  <button class="tab-content__button tab-content__button--prev button button--prev">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#left-arrow"></use>
+                    </svg>
+                    Prev step
+                  </button>
+                  <button class="tab-content__button tab-content__button--next button button--next">
+                    Next step
+                    <svg>
+                      <use xlink:href="img/sprite.svg#right-arrow"></use>
+                    </svg>
+                  </button>
                 </div>
-                <div class="tab-content__exit-button">
-                  <button class="tab-content__button tab-content__button--cancel button">Cancel</button>
-                </div>
+                <button class="tab-content__button tab-content__button--cancel button button--cancel">Cancel</button>
               </div>
             </section>
           </div>
         </li>
-        <li class="account-nav__tab tab">
+        <li class="account-nav__tab tab tab--active">
           <input type="radio" name="account-tab" id="security" class="tab__item" checked>
           <label for="security">Security</label>
           <div class="tab__content">
@@ -284,32 +342,42 @@
                 <p class="security-content__step-title">Step 3</p>
                 <div class="security-content__action">
                   <form action="" class="security-content__action-form">
-                    <fieldset>
-                      <legend>
+                    <fieldset class="security-content__action-block">
+                      <legend class="security-content__action-description">
                         Now type 6 number from your Google Authenticator app
                         to activate 2FA authentication to your account
                       </legend>
-                      <input type="number" name="code-number" id="code" placeholder="5">
-                      <input type="number" name="code-number" id="code" placeholder="4">
-                      <input type="number" name="code-number" id="code" placeholder="9">
-                      <input type="number" name="code-number" id="code" placeholder="1">
-                      <input type="number" name="code-number" id="code" placeholder="7">
-                      <input type="number" name="code-number" id="code" placeholder="2">
+                      <div class="security-content__inputs">
+                        <input class="security-content__input" type="number" name="code-number" id="code" placeholder="5">
+                        <input class="security-content__input" type="number" name="code-number" id="code" placeholder="4">
+                        <input class="security-content__input" type="number" name="code-number" id="code" placeholder="9">
+                        <input class="security-content__input" type="number" name="code-number" id="code" placeholder="1">
+                        <input class="security-content__input" type="number" name="code-number" id="code" placeholder="7">
+                        <input class="security-content__input" type="number" name="code-number" id="code" placeholder="2">
+                      </div>
                     </fieldset>
                   </form>
                   <div class="security-content__correct-indicator">
-                    <p>Correct</p>
+                    <p class="security-content__indicator-text">Correct</p>
                   </div>
                 </div>
               </div>
               <div class="tab-content__buttons">
                 <div class="tab-content__nav-buttons">
-                  <button class="tab-content__button tab-content__button--prev button">Prev step</button>
-                  <button class="tab-content__button tab-content__button--next button">Next step</button>
+                  <button class="tab-content__button tab-content__button--prev button button--prev">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#left-arrow"></use>
+                    </svg>
+                    Prev step
+                  </button>
+                  <button class="tab-content__button tab-content__button--next button button--next">
+                    Next step
+                    <svg>
+                      <use xlink:href="img/sprite.svg#right-arrow"></use>
+                    </svg>
+                  </button>
                 </div>
-                <div class="tab-content__exit-button">
-                  <button class="tab-content__button tab-content__button--cancel button">Cancel</button>
-                </div>
+                <button class="tab-content__button tab-content__button--cancel button button--cancel">Cancel</button>
               </div>
             </section>
           </div>
@@ -330,12 +398,20 @@
               </div>
               <div class="tab-content__buttons">
                 <div class="tab-content__nav-buttons">
-                  <button class="tab-content__button tab-content__button--prev button">Prev step</button>
-                  <button class="tab-content__button tab-content__button--next button">Next step</button>
+                  <button class="tab-content__button tab-content__button--prev button button--prev">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#left-arrow"></use>
+                    </svg>
+                    Prev step
+                  </button>
+                  <button class="tab-content__button tab-content__button--next button button--next">
+                    Next step
+                    <svg>
+                      <use xlink:href="img/sprite.svg#right-arrow"></use>
+                    </svg>
+                  </button>
                 </div>
-                <div class="tab-content__exit-button">
-                  <button class="tab-content__button tab-content__button--cancel button">Cancel</button>
-                </div>
+                <button class="tab-content__button tab-content__button--cancel button button--cancel">Cancel</button>
               </div>
             </section>
           </div>
@@ -356,19 +432,26 @@
               </div>
               <div class="tab-content__buttons">
                 <div class="tab-content__nav-buttons">
-                  <button class="tab-content__button tab-content__button--prev button">Prev step</button>
-                  <button class="tab-content__button tab-content__button--next button">Next step</button>
+                  <button class="tab-content__button tab-content__button--prev button button--prev">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#left-arrow"></use>
+                    </svg>
+                    Prev step
+                  </button>
+                  <button class="tab-content__button tab-content__button--next button button--next">
+                    Next step
+                    <svg>
+                      <use xlink:href="img/sprite.svg#right-arrow"></use>
+                    </svg>
+                  </button>
                 </div>
-                <div class="tab-content__exit-button">
-                  <button class="tab-content__button tab-content__button--cancel button">Cancel</button>
-                </div>
+                <button class="tab-content__button tab-content__button--cancel button button--cancel">Cancel</button>
               </div>
             </section>
           </div>
         </li>
       </ul>
     </secttion>
-    
   </main>
   <footer class="footer">
     <div class="footer__container container">

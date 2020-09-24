@@ -1,0 +1,20 @@
+.footer-nav {
+  margin-bottom: 20px;
+}
+
+.footer-nav__list {
+  @include list-reset();
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-nav__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.footer-nav__link {
+  text-decoration: none;
+  color: $second-font-color;
+}
