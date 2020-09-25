@@ -17,6 +17,12 @@
     border: 1px solid $button-color;
     border-radius: 4px;
   }
+
+  &--action {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -24,6 +30,16 @@
     &--load {
       font-size: 13px;
       padding: 10px 15px;
+
+      &:active,
+      &:hover,
+      &:focus {
+        padding: 10px 13px;
+      }
+    }
+
+    &--action {
+      font-size: 0;
     }
 
     &:active,
@@ -41,6 +57,7 @@
       &:focus,
       &:hover {
         background-color: transparent;
+        box-shadow: none;
 
         svg {
           fill: $active-color;

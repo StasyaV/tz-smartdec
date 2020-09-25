@@ -28,6 +28,10 @@
   height: 55px;
   background-color: transparent;
   border: 1px solid $border-color;
+  padding: 0 2px;
+  font-size: 26px;
+  color: $active-font-color;
+  font-family: inherit;
 
   &:not(:last-child) {
     margin-right: 7px;
@@ -67,11 +71,12 @@
   }
 
   .security-content__input {
-    width: 40px;
-    padding-top: 10px;
+    width: 45px;
+    padding: 0 12px;
+    font-size: 32px;
 
     &::placeholder {
-      padding: 10px 7px;
+      padding: 0;
       font-size: 32px;
     }
 

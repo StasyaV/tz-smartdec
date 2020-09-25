@@ -6,12 +6,6 @@
   padding: 20px;
   border-bottom: 1px solid $border-color;
   text-align: center;
-
-  &--action {
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-  }
 }
 
 .user-button__ico {
@@ -41,10 +35,6 @@
 
   .user-button {
     padding: 20px 0;
-
-    &--action {
-      font-size: 0;
-    }
   }
 
   .user-button__ico {
