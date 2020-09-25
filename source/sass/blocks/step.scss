@@ -7,7 +7,11 @@
 }
 
 .step__item {
-  padding: 15px 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid $border-color;
   border-radius: 50%;
   font-weight: bold;
@@ -23,7 +27,7 @@
       background-color: $border-color;
       position: absolute;
       top: 50%;
-      left: 115%;
+      left: 150%;
     }
   }
 
@@ -31,16 +35,6 @@
     background-color: $active-color;
     border-color: $active-color;
     color: $main-color;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .step__item {
-    &:not(:last-child) {
-      &::after {
-        left: 150%;
-      }
-    }
   }
 }
 
