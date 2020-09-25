@@ -44,12 +44,24 @@
   }
 
   &--cancel {
-    width: 100%;
     border-color: $second-font-color;
     color: $second-font-color;
     text-align: center;
-    padding: 10px 110px;
     display: inline-block;
+    width: 100%;
+  }
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $main-color;
+    font-weight: bold;
+    background-color: $active-color;
+    box-shadow: 0 2px 15px $active-color;
+
+    svg {
+      fill: $main-color;
+    }
   }
 }
 
@@ -69,8 +81,21 @@
 
 @media (min-width: $tablet-width) {
   .tab__content-button {
-    padding: 20px;
     font-size: 18px;
+
+    &--cancel {
+      width: 30%;
+    }
+  }
+
+  .tab__content-buttons {
+    flex-direction: row;
+  }
+
+  .tab__content-nav-buttons {
+    margin-bottom: 0;
+    margin-right: 65px;
+    flex-grow: 1;
   }
 }
 
@@ -111,7 +136,7 @@
   }
 
   .tab__content-nav-buttons {
-    margin-bottom: 0;
+    flex-grow: 0;
     margin-right: auto;
   }
 
@@ -128,19 +153,6 @@
 
     &--next {
       padding-left: 5px;
-    }
-
-    &:active,
-    &:focus,
-    &:hover {
-      color: $main-color;
-      font-weight: bold;
-      background-color: $active-color;
-      box-shadow: 0 2px 15px $active-color;
-
-      svg {
-        fill: $main-color;
-      }
     }
   }
 }
